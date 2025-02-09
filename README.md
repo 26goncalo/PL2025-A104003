@@ -1,4 +1,4 @@
-![Foto](photo.jpg)
+![Foto](photo.jpg?refresh=1)
 
 # Identificação
 
