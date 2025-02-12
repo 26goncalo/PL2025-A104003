@@ -6,7 +6,7 @@
 
 **Nome:** Gonçalo Monteiro Cunha  
 **Número de Aluno:** A104003  
-**Data:** 12/02/2024  
+**Data:** 12/02/2025  
 
 ## Resumo
 
@@ -41,9 +41,9 @@ O programa é bastante simples, consistindo apenas num ciclo *while* para percor
 
 - Caso seja um `=`, é impresso para o terminal o valor atual da soma, verificando se existia algum valor armazenado na variável `digits` que ainda não tinha sido somado. É também reiniciada a variável `digits`;  
 
-- Se for um `o`, é verificado se os caracteres seguintes são dois 'ff' ou se o seguinte é um 'n', para verificar de uma forma mais eficiente se estamos perante um "off" ou um "on". Perante cada um dos casos, a *flag* `on` é alterada e o índice da procura (`i`) atualizado de modo a ignorar os caracteres seguintes da palavra encontrada;  
+- Se for um `o`, é verificado se os caracteres seguintes são dois 'ff' ou se o seguinte é um 'n', para verificar de uma forma mais eficiente se estamos perante um "off" ou um "on". Perante cada um dos casos, a *flag* `on` é alterada e o índice `i` atualizado de modo a ignorar os caracteres seguintes da palavra encontrada;  
 
-- Caso o comportamento da soma esteja ativo, se o caracter for um dígito é adicionado à variável que guarda os algarismos dos números que serão somados; se não for e se a variável `digits`tiver um número, este é então somado (quando encontramos um caracter não numérico, significa que o número completo já foi identificado e pode ser somado.).  
+- Caso o comportamento da soma esteja ativo, se o caracter for um dígito é adicionado à variável que guarda os algarismos dos números que serão somados; se não for e se a variável `digits`tiver um número, este é então somado (quando encontramos um caracter não numérico, significa que o número completo já foi identificado e pode ser somado).  
 
 #### 3. Exemplo de utilização do programa
 
