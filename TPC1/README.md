@@ -6,7 +6,7 @@
 
 **Nome:** Gonçalo Monteiro Cunha  
 **Número de Aluno:** A104003  
-**Data:** 12/02/2025  
+**Data:** 14/02/2025  
 
 ## Resumo
 
@@ -14,10 +14,12 @@ Este trabalho consistiu em desenvolver um programa que, dado um texto, soma toda
 
 ## Enunciado
 
-Pretende-se um programa que some todas as sequências de dígitos que encontre num texto;  
-Sempre que encontrar a string "Off" em qualquer combinação de maiúsculas e minúsculas, esse comportamento é desligado;  
-Sempre que encontrar a string "On" em qualquer combinação de maiúsculas e minúsculas, esse comportamento é novamente ligado;  
-Sempre que encontrar o caráter "=", o resultado da soma é colocado na saída.
+Somador on/off: criar um programa em Python (sem usar expressões regulares) que...
+1. Some todas as sequências de dígitos que encontre num texto;
+2. Sempre que encontrar a string "Off" em qualquer combinação de maiúsculas e minúsculas, esse comportamento é desligado;
+3. Sempre que encontrar a string "On" em qualquer combinação de maiúsculas e minúsculas, esse comportamento é novamente ligado;
+4. Sempre que encontrar o caráter "=", o resultado da soma é colocado na saída.
+5. No fim, coloca o valor da soma na saída.
 
 
 ## Explicação da Implementação
@@ -44,6 +46,8 @@ O programa é bastante simples, consistindo apenas num ciclo *while* para percor
 - Se for um `o`, é verificado se os caracteres seguintes são dois 'ff' ou se o seguinte é um 'n', para verificar de uma forma mais eficiente se estamos perante um "off" ou um "on". Perante cada um dos casos, a *flag* `on` é alterada e o índice `i` atualizado de modo a ignorar os caracteres seguintes da palavra encontrada;  
 
 - Caso o comportamento da soma esteja ativo, se o caracter for um dígito é adicionado à variável que guarda os algarismos dos números que serão somados; se não for e se a variável `digits`tiver um número, este é então somado (quando encontramos um caracter não numérico, significa que o número completo já foi identificado e pode ser somado).  
+
+Por último, é impresso o resultado final, tendo em atenção o caso em que o texto termina com um número, no qual é necessário atualizar a variável `counter` com o valor armazenado em `digits`.  
 
 #### 3. Exemplo de utilização do programa
 

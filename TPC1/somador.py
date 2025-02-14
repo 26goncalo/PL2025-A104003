@@ -13,7 +13,7 @@ def main():
         if char == '=':
             if digits != "":
                 counter += int (digits)   # Caso 'digits' tenha conteúdo, atualiza 'counter' antes de imprimir
-                digits = ""   # Reinicialização de digits
+                digits = ""
             print (counter)
 
         elif char == 'o':   # Para procurar por "on" ou "off"
@@ -29,8 +29,11 @@ def main():
                 digits += char   # O algarismo é adicionado a 'digits'
             elif digits != "":   # Se o caracter não for um dígito e 'digits' tiver conteúdo
                 counter += int (digits)   # 'counter' é atualizado com o valor 'digits'
-                digits = ""   # Reinicialização de digits
+                digits = ""
         i += 1   # Atualização do índice
+    if digits != "":
+        counter += int (digits)   # Caso o número apareça no final da string, é necessário atualizar 'counter' com esse valor
+    print (counter)
 
 
 
