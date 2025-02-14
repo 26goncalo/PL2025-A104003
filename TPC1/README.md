@@ -39,7 +39,7 @@ Comecei por declarar as variáveis necessárias:
 
 #### 2. Ciclo para percorrer o texto
 
-O programa é bastante simples, consistindo apenas num ciclo *while* para percorrer a *string* lida. Neste, é avaliado cada caracter do texto e verificado em que situação se insere:  
+O programa é bastante simples, consistindo basicamente num ciclo *while* para percorrer a *string* lida. Neste, é avaliado cada caracter do texto e verificado em que situação se insere:  
 
 - Caso seja um `=`, é impresso para o terminal o valor atual da soma, verificando se existia algum valor armazenado na variável `digits` que ainda não tinha sido somado. É também reiniciada a variável `digits`;  
 
@@ -62,7 +62,7 @@ De seguida, a aplicação irá pedir o texto a utilizar. No final, pressionando 
 - Exemplo de texto:
 
 ```sh
-abc2dOff4=oN100pdsl=1nc30oFfsdsa255nc=pa
+abc2dOff4=oN100pdsl=1nc30oFfsdsa255ncpa
 ```
 
 - Output para o exemplo:
