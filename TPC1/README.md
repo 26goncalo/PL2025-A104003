@@ -69,5 +69,5 @@ abc2dOff4=oN100pdsl=1nc30oFfsdsa255ncpa
 ```
 2       # Soma até ao primeiro =, ignorando '4' que surge após um "off"
 102     # Soma até ao segundo =, adicionando '100' que vem após "on" (2 + 100)
-133     # Soma final, até ao terceiro =, adicionando '1' e '30' e ignorando '255' após o "off" (102 + 1 + 30)
+133     # Soma final, adicionando '1' e '30' e ignorando '255' após o "off" (102 + 1 + 30)
 ```
