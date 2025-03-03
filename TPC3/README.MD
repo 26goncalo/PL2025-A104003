@@ -87,7 +87,7 @@ Depois disto, é colocado em `conteudo_md` todo o resultado da conversão e escr
 
 ## Exemplo de utilização do programa
 
-Para execeutar este programa, deve-se utilizar este comando:
+Para executar este programa, deve-se utilizar este comando:
 
 ```sh
 python3 conversor.py <ficheiro MD a converter>
