@@ -42,6 +42,8 @@ def main():
         elif opcao.startswith("MOEDA"):   # Ex.: MOEDA 2e, 1e, 50c, 5c.
             moedas = re.findall(r'\d+[ec]', opcao[6:])   # Lista de moedas. Ex.: [2e, 1e, 50c, 5c]
             for moeda in moedas:
+                print (moeda)
+                print (valores.get(moeda,0))
                 valor = valores.get(moeda, 0)   # 'valor' está em cêntimos. O valor default caso não encontre a moeda na lista é 0
                 if valor == 0:   # Caso a moeda não exista
                     print("Foi inserida uma moeda inválida.")
@@ -104,8 +106,8 @@ def main():
                 else:
                     troco_str = ", ".join(troco_partes[:-1]) + " e " + troco_partes[-1] + "."
                 print("Pode retirar o troco:", troco_str)
-                with open('stock.json', "w", encoding="utf-8") as f:   # Mantém os acentos
-                    json.dump({"stock": stock}, f, indent=4, ensure_ascii=False)   # Atualiza o ficheiro de stock
+            with open('stock.json', "w", encoding="utf-8") as f:   # Mantém os acentos
+                json.dump({"stock": stock}, f, indent=4, ensure_ascii=False)   # Atualiza o ficheiro de stock
             print("Até à próxima.")
             break
 
